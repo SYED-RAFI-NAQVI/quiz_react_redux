@@ -1,0 +1,16 @@
+.btn_option {
+  border-radius: 5%;
+  border: none;
+  font-size: 22px;
+  transition: transform 0.2s;
+}
+
+.btn_option:hover {
+  background-color: #1d3557;
+  color: white;
+  transform: scale(1.05);
+}
+
+.btn_option:active {
+  transform: scale(0.9);
+}

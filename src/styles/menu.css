@@ -1,0 +1,22 @@
+.btn_ques {
+  border: none;
+  transition: transform 0.2s;
+}
+
+.btn_ques:hover {
+  transform: scale(1.05);
+}
+
+
+.btn_ques:active {
+  transform: scale(0.9);
+}
+
+.username_input {
+  border: none;
+  font-size: 24px;
+}
+
+.btn_active {
+  background-color: #e63946;
+}
