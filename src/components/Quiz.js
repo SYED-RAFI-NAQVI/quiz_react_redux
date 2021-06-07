@@ -25,7 +25,7 @@ function Quiz() {
   };
 
   const handleSetQuesAns = (e) => {
-    if (setData.dataArr[currentQuestion].correct_answer == e) {
+    if (setData.dataArr[currentQuestion].correct_answer === e) {
       setScore((pre) => pre + 1);
     }
     nextQuestion();
@@ -44,11 +44,11 @@ function Quiz() {
       )
       .then((data) => dispatch(apiData({ dataArr: data.data })))
       .catch((err) => console.log(err));
-  }, []);
+  });
 
   useEffect(() => {
     let timer;
-    if (setData.dataArr && setData.dataArr.length == currentQuestion) {
+    if (setData.dataArr && setData.dataArr.length === currentQuestion) {
       setInt(null);
       dispatch(updateScore({ score }));
       dispatch(updateGameState({ gameState: "finished" }));

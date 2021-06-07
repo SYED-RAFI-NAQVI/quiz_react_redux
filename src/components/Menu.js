@@ -10,7 +10,7 @@ function Menu() {
 
   const dispatch = useDispatch();
   const handleSubmit = () => {
-    if (userName == "") {
+    if (userName === "") {
       alert("Input Not Valid");
       return;
     }
